@@ -1,6 +1,6 @@
 # MVP Office Supplies
 
-## Symfonycast
+## Symfonycasts
 
 - [ ] Symfony UX: Stimulus.js
 
@@ -41,6 +41,15 @@ error that you need to run `symfony server:ca:install` first).
 
 Now check out the site at `https://localhost:8000`. You'll see
 an error now - finish the setup instructions to get things working!
+
+**Install node dependencies**
+
+Make sure you have [Yarn installed](https://yarnpkg.com/en/docs/install) and then run:
+
+```
+yarn install
+yarn watch
+```
 
 **3) Database Setup (with Docker)**
 
