@@ -12,6 +12,7 @@
         "stimulus": "^2.0.0",
         "stimulus-use": "^0.23.0",
         "sweetalert2": "^10.16.6",
+        "webpack-bundle-analyzer": "^4.4.1",
         "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
