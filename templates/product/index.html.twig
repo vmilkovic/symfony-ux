@@ -35,9 +35,14 @@
                         <form>
                             <div 
                                 class="input-group"
-                                {{ stimulus_controller('search-preview', {
-                                    url: path('app_homepage')
+                                {{ stimulus_controller({
+                                    'autocomplete': {
+                                        url: path('app_homepage', { preview: 1 }),
+                                        skipHiddenProperty: true
+                                    },
+                                    'autocomplete-transition': {} 
                                 }) }}
+                                data-action="toggle->autocomplete-transition#toggle"
                             >
                                 <input
                                     name="q"
@@ -45,11 +50,12 @@
                                     placeholder="Search products..."
                                     type="search"
                                     class="form-control"
-                                    data-action="search-preview#onSearchInput"
+                                    data-autocomplete-target="input"
                                 >
                                 <div
                                     class="search-preview"
-                                    data-search-preview-target="result"
+                                    data-autocomplete-target="results"
+                                    data-autocomplete-transition-target="results"
                                 ></div>
                             </div>
                         </form>
