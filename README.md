@@ -2,7 +2,7 @@
 
 ## Symfonycasts
 
-- [ ] Symfony UX: Stimulus.js
+- [x] Symfony UX: Stimulus.js
 
 ## Setup
 
